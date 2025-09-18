@@ -35,6 +35,19 @@
     "react-test-renderer": "19.1.0",
     "typescript": "^5.8.3"
   },
+    "codegenConfig": {
+    "name": "AppSpec",
+    "type": "components",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.mfazekas.reproducerapp"
+    },
+    "ios": {
+      "componentProvider": {
+        "SimpleView": "RCTSimpleView"
+      }
+    }
+  },
   "engines": {
     "node": ">=20"
   }
